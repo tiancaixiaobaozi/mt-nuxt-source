@@ -108,7 +108,7 @@
 
 <script>
   export default {
-    name: "nav"
+    name: "navBar"
   }
 </script>
 
