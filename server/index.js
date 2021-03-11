@@ -1,6 +1,9 @@
 const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
+import mongoose from 'mongoose'
+import bodyParser from 'koa-bodyparser'
+import session from 'koa-generic-session'
 
 const app = new Koa()
 
@@ -14,7 +17,7 @@ async function start () {
 
   const {
     host = process.env.HOST || '127.0.0.1',
-    port = process.env.PORT || 3000
+    port = process.env.PORT || 4396
   } = nuxt.options.server
 
   // Build in development

@@ -27,6 +27,7 @@
   }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  @import "@/assets/css/public/layout.scss";
+  @import "@/assets/css/public/header/index.scss";
 </style>

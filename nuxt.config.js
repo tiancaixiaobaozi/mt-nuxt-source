@@ -18,6 +18,10 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
+  server: {
+    host: 'localhost',
+    port: 4396
+  },
   loading: { color: '#fff' },
   /*
   ** Global CSS

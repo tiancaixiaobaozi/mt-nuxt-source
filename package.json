@@ -11,11 +11,22 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
+    "crypto-js": "^4.0.0",
     "element-ui": "^2.4.11",
     "koa": "^2.6.2",
+    "koa-bodyparser": "^4.3.0",
+    "koa-generic-session": "^2.1.1",
+    "koa-passport": "^4.1.4",
+    "koa-redis": "^4.0.1",
+    "koa-router": "^10.0.0",
     "lodash": "^4.17.21",
-    "nuxt": "^2.0.0"
+    "mongoose": "^5.11.19",
+    "nodemailer": "^6.5.0",
+    "nuxt": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "redis": "^3.0.2"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",
