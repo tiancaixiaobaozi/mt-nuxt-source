@@ -1,10 +1,10 @@
-import Router from 'koa-router'
-import Redis from 'koa-redis'
-import nodeMailer from 'nodemailer'
-import User from '../dbs/models/users'
-import Passport from './utils/passport'
-import Email from '../dbs/config'
-import axios from './utils/axios'
+const Router = require('koa-router')
+const Redis = require('koa-redis')
+const nodeMailer = require('nodemailer')
+const User = require('../dbs/models/users')
+const Passport = require('./utils/passport')
+const Email = require('../dbs/config')
+const axios = require('./utils/axios')
 
 let router = new Router({
   prefix: '/users'
@@ -185,4 +185,4 @@ router.get('/getUser', async ctx => {
   }
 })
 
-export default router
+module.exports = router

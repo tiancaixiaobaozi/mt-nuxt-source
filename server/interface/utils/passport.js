@@ -1,6 +1,6 @@
-import passport from 'koa-passport'
-import LocalStrategy from 'passport-local'
-import UserModel from '../../dbs/models/users'
+const passport = require('koa-passport')
+const LocalStrategy = require('passport-local')
+const UserModel = require('../../dbs/models/users')
 
 passport.use(new LocalStrategy(async function (username, password, done) {
   let where = {
@@ -18,7 +18,7 @@ passport.use(new LocalStrategy(async function (username, password, done) {
   }
 }))
 
-// 序列号
+// 序列化
 passport.serializeUser(function (user, done) {
   done(null, user)
 })
@@ -28,4 +28,4 @@ passport.deserializeUser(function (user, done) {
   return done(null, user)
 })
 
-export default passport
+module.exports = passport
